@@ -7,7 +7,7 @@ scriptFolder = os.path.dirname(os.path.realpath(__file__))
 os.chdir(scriptFolder)
 
 # Find version info from module (without importing the module):
-with open("src/wizcoin/__init__.py", "r") as fileObj:
+with open("src/{{ cookiecutter.module_name }}/__init__.py", "r") as fileObj:
     version = re.search(
         r'^__version__\s*=\s*[\'"]([^\'"]*)[\'"]', fileObj.read(), re.MULTILINE
     ).group(1)
@@ -17,12 +17,12 @@ with io.open("README.md", encoding="utf-8") as fileObj:
     long_description = fileObj.read()
 
 setup(
-    name="WizCoin",
+    name="{{ cookiecutter.project_name }}",
     version=version,
-    url="https://github.com/shreyanavigyan/wizcoin",
-    author="Shreyan Avigyan",
-    author_email="shreyan.avigyan@gmail.com",
-    description=("""A Python module to represent the galleon, sickle, and knut coins of wizard currency."""),
+    url="https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.module_name }}",
+    author="{{ cookiecutter.author_name }}",
+    author_email="{{ cookiecutter.author_email }}",
+    description=("""{{ cookiecutter.project_short_description }}"""),
     long_description=long_description,
     long_description_content_type="text/markdown",
     license="MIT",

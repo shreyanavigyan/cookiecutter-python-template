@@ -1,3 +1,4 @@
+
 # -*- coding: utf-8 -*-
 #
 # Configuration file for the Sphinx documentation builder.
@@ -19,9 +20,9 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'WizCoin'
-copyright = '2018, Shreyan Avigyan'
-author = 'Shreyan Avigyan'
+project = '{{ cookiecutter.project_name }}'
+copyright = ''
+author = '{{ cookiecutter.author_name }}'
 
 # The short X.Y version
 version = ''
@@ -104,7 +105,7 @@ html_static_path = ['_static']
 # -- Options for HTMLHelp output ---------------------------------------------
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'wizcoindoc'
+htmlhelp_basename = '{{ cookiecutter.module_name }}doc'
 
 
 # -- Options for LaTeX output ------------------------------------------------
@@ -131,8 +132,8 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'wizcoin.tex', 'WizCoin Documentation',
-     'Shreyan Avigyan', 'manual'),
+    (master_doc, '{{ cookiecutter.module_name }}.tex', '{{ cookiecutter.project_name }} Documentation',
+     '{{ cookiecutter.author_name }}', 'manual'),
 ]
 
 
@@ -141,7 +142,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'wizcoin', 'WizCoin Documentation',
+    (master_doc, '{{ cookiecutter.module_name }}', '{{ cookiecutter.project_name }} Documentation',
      [author], 1)
 ]
 
@@ -152,8 +153,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'wizcoin', 'WizCoin Documentation',
-     author, 'WizCoin', 'A Python module to represent the galleon, sickle, and knut coins of wizard currency.',
+    (master_doc, '{{ cookiecutter.module_name }}', '{{ cookiecutter.project_name }} Documentation',
+     author, '{{ cookiecutter.project_name }}', '{{ cookiecutter.project_short_description }}',
      'Miscellaneous'),
 ]
 

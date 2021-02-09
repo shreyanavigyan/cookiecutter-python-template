@@ -1,9 +1,7 @@
-WizCoin
+{{ cookiecutter.module_name }}
 ======
 
-A Python module to represent the galleon, sickle, and knut coins of wizard currency.
-
-This is just a test repo created from the book "Beyond the Basic Stuff with Python" by Al Sweigart.
+{{ cookiecutter.project_short_description }}
 
 Installation
 ------------

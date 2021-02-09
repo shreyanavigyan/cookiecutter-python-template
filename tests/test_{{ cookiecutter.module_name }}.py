@@ -1,6 +1,6 @@
 from __future__ import division, print_function
 import pytest
-import wizcoin
+import {{ cookiecutter.module_name }}
 
 
 def test_basic():
