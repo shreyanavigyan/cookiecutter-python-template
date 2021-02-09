@@ -1,19 +1,3 @@
-{{ cookiecutter.module_name }}
-======
+# cookiecutter-python-template
 
-{{ cookiecutter.project_short_description }}
-
-Installation
-------------
-
-TODO - fill this in later
-
-Quickstart Guide
-----------------
-
-TODO - fill this in later
-
-Contribute
-----------
-
-TODO - fill this in later
+A cookiecutter template for basic Python projects.
